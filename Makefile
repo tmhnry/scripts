@@ -1,5 +1,5 @@
 all:
-	bash setup.sh -c link
+	sudo bash -c setup.sh install
 
 clean:
 	bash setup.sh -c unlink
