@@ -12,9 +12,8 @@ SRC="$(basename "${BASH_SOURCE:-$0}")"
 # remove extension
 # SRC="${SRC%.*}"
 
-install(){
-	for FILE in $DIR/*.sh
-	do
+install() {
+	for FILE in $DIR/*.sh; do
 		BASE="$(basename "${FILE}")"
 		# use ==, sometimes -eq doesn't workA
 		# remove file extensions
@@ -26,9 +25,8 @@ install(){
 	done
 }
 
-clean(){
-	for FILE in $DIR/*.sh
-	do
+clean() {
+	for FILE in $DIR/*.sh; do
 		BASE="$(basename "${FILE}")"
 		# use ==, sometimes -eq doesn't workA
 		# remove file extensions
